@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/index.js"></script>
+
+  <title>Pomodoro Clock</title>
+</head>
+
+<body>
+  <div class="pomodoro">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top text-center">
+        <ul class="navbar-nav mx-auto">
+          <h1>Pomodoro Timer</h1>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="settings">
+        <section class="session">
+          <div id="session-label">Session</div>
+          <button id="session-decrement">
+            <i class="fas fa-angle-left"></i>
+          </button>
+          <div id="session-length">25</div>
+          <button id="session-increment">
+            <i class="fas fa-angle-right"></i>
+          </button>
+        </section>
+
+        <section class="break">
+          <div id="break-label">Break</div>
+          <button id="break-decrement">
+            <i class="fas fa-angle-left"></i>
+          </button>
+          <div id="break-length">5</div>
+          <button id="break-increment">
+            <i class="fas fa-angle-right"></i>
+          </button>
+        </section>
+      </section>
+
+      <section class="timer">
+        <div id="timer-label">Session Time</div>
+        <div id="time-left">25:00</div>
+        <audio id="beep"
+          src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"></audio>
+      </section>
+
+      <section class="controls">
+        <button id="stop">
+          <i class="fas fa-stop"></i>
+        </button>
+        <button id="start_stop">
+          <i class="fas fa-play"></i>
+          <i class="fas fa-pause"></i>
+        </button>
+        <button id="reset">
+          <i class="fas fa-sync-alt"></i>
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      <nav id="footer" class="navbar navbar-expand-lg navbar-dark fixed-bottom text-center">
+        <ul class="navbar-nav mx-auto">
+          <li>
+            <a class="nav-link" href="#">
+              By ValerieGM
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+</body>
+
+</html>
